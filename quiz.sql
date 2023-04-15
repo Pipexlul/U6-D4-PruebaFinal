@@ -68,7 +68,6 @@ ORDER BY q.id ASC;
 
 -- Implementa borrado en cascada de las respuestas al borrar un usuario y borrar el primer usuario para probar la implementación.
 DELETE FROM users WHERE id = 1; -- Test (Should fail)
--- Reload data here
 
 ALTER TABLE answers DROP CONSTRAINT answers_user_id_fk;
 ALTER TABLE answers ADD CONSTRAINT answers_user_id_fk FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE;
@@ -83,4 +82,4 @@ INSERT INTO users (name, age) VALUES ('Hillary', 15); --Test (Should fail)
 -- Altera la tabla existente de usuarios agregando el campo email con la restricción de único.
 ALTER TABLE users ADD COLUMN email VARCHAR(100) UNIQUE;
 INSERT INTO users (name, age, email) VALUES ('Javik', 50030, 'prothytheprothean@normandy.com'); --Test
-INSERT INTO users (name, age, email) VALUES ('Blasto', 74, 'prothytheprothean@normandy.com'); --Test
+INSERT INTO users (name, age, email) VALUES ('Blasto', 74, 'prothytheprothean@normandy.com'); --Test (Should fail)
