@@ -52,6 +52,6 @@ ORDER BY subquery.id ASC;
 
 -- Test unique combinations:
 -- Add valid new values
-INSERT INTO movies_tags (movie_id, tag_id) VALUES (5, 4);
+INSERT INTO movies_tags (movie_id, tag_id) VALUES (5, 4); --Test
 -- Insert same combination to see if an error is raised
-INSERT INTO movies_tags (movie_id, tag_id) VALUES (5, 4);
+INSERT INTO movies_tags (movie_id, tag_id) VALUES (5, 4); --Test (Should fail)
