@@ -77,7 +77,7 @@ SELECT * FROM answers;
 
 -- Crea una restricción que impida insertar usuarios menores de 18 años en la base de datos.
 ALTER TABLE users ADD CONSTRAINT age_check CHECK (age >= 18);
-INSERT INTO users (name, age) VALUES ('Hillary', 15); --Test (Should fail)
+INSERT INTO users (name, age) VALUES ('Hilary', 15); --Test (Should fail)
 
 -- Altera la tabla existente de usuarios agregando el campo email con la restricción de único.
 ALTER TABLE users ADD COLUMN email VARCHAR(100) UNIQUE;
