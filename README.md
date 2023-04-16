@@ -3,3 +3,7 @@
 Archivo a revisar de la primera parte: `movies_tags.sql`
 
 Archivo a revisar de la segunda parte: `quiz.sql`
+
+## Link a video explicativo
+
+[Youtube Link](https://www.youtube.com/watch?v=R_5TJFf2Fis) (Puede que la version HD todavia se este procesando)
